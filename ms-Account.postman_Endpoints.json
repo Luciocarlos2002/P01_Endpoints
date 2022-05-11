@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "7d149bae-201c-49e1-b485-97d59e6cf8d9",
+		"name": "ms-Account",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ms-Account-week01",
+			"item": [
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeAccount\":\"Cuenta Ahorro\",\r\n    \"numberAccount\":\"0928178101234\",\r\n    \"keyAccount\":\"8002\",\r\n    \"availableBalanceAccount\":\"2900.00\",\r\n    \"dateCreationAccount\":\"11/05/2022\",\r\n    \"statusAccount\":\"Activo\",\r\n    \"idEmployeeCreation\":\"801940123\",\r\n    \"idCustomer\":\"627bdef911b42d73e2a944ab\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/account",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/account/627c1ea82659a06f5d7d7017",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account",
+								"627c1ea82659a06f5d7d7017"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeAccount\":\"Cuenta Ahorro\",\r\n    \"numberAccount\":\"0928178101234\",\r\n    \"keyAccount\":\"8002\",\r\n    \"availableBalanceAccount\":\"2900.00\",\r\n    \"dateCreationAccount\":\"11/05/2022\",\r\n    \"statusAccount\":\"Inactivo\",\r\n    \"idEmployeeCreation\":\"801940123\",\r\n    \"idCustomer\":\"627bdef911b42d73e2a944ab\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/account/627c1f0b2659a06f5d7d7018",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account",
+								"627c1f0b2659a06f5d7d7018"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ms-Account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/account/627c1f792659a06f5d7d7019",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"account",
+								"627c1f792659a06f5d7d7019"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
