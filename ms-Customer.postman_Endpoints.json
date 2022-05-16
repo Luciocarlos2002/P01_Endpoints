@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Lucio Carlos\",\r\n    \"lastname\": \"Huaman Tirado\",\r\n    \"dni\":\"70277538\",\r\n    \"typcustomer\":\"Personal\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Lucio Carlos\",\r\n    \"lastName\": \"Huaman Tirado\",\r\n    \"dni\":\"70277538\",\r\n    \"typCustomer\":\"Personal\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -23,15 +23,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/Customer/",
+							"raw": "http://localhost:8080/customer/create",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"Customer",
-								""
+								"customer",
+								"create"
 							]
 						}
 					},
@@ -50,15 +50,15 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/Customer/",
+							"raw": "http://localhost:8080/customer/allCustomers",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"Customer",
-								""
+								"customer",
+								"allCustomers"
 							]
 						}
 					},
@@ -70,15 +70,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/Customer/627bd95811b42d73e2a944aa",
+							"raw": "http://localhost:8080/customer/628060e14d7885490d08b698",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"Customer",
-								"627bd95811b42d73e2a944aa"
+								"customer",
+								"628060e14d7885490d08b698"
 							]
 						}
 					},
@@ -91,7 +91,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Peter\",\r\n    \"lastname\": \"Parker\",\r\n    \"dni\":\"14707813\",\r\n    \"typcustomer\":\"Personal\"\r\n}",
+							"raw": "{\r\n    \"name\":\"Peter\",\r\n    \"lastName\": \"Parker\",\r\n    \"dni\":\"14707813\",\r\n    \"typCustomer\":\"Personal\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -99,15 +99,16 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/Customer/627bdef911b42d73e2a944ab",
+							"raw": "http://localhost:8080/customer/update/6280618c4d7885490d08b69a",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"Customer",
-								"627bdef911b42d73e2a944ab"
+								"customer",
+								"update",
+								"6280618c4d7885490d08b69a"
 							]
 						}
 					},
@@ -119,15 +120,16 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/Customer/627bdf3111b42d73e2a944ac",
+							"raw": "http://localhost:8080/customer/delete/6280618c4d7885490d08b69a",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"Customer",
-								"627bdf3111b42d73e2a944ac"
+								"customer",
+								"delete",
+								"6280618c4d7885490d08b69a"
 							]
 						}
 					},
